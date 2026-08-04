@@ -1,13 +1,13 @@
-# 智能创客社团官网
+<img width="2180" height="967" alt="image" src="https://github.com/user-attachments/assets/c64a9b0f-0140-4401-b8da-381c8ff599f7" /># 智能创客社团官网
 
 山东农业工程学院 · 工程训练中心 · 智能创客社团的官方网站。
 基于全国大学生智能汽车竞赛（第二十一届）建设，面向新生招新与社团展示。
 
 **在线预览：https://elk-maker-club.vercel.app
 
-<!-- 部署完成后截一张首页图放到 docs/screenshot.png，并取消下面这行的注释
-![首页截图](docs/screenshot.png)
--->
+![Uploading image.png…]()
+
+
 
 ## 技术栈
 
