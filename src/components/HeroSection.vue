@@ -4,26 +4,36 @@
     <div class="brand-watermark" :style="{ backgroundImage: `url(${logo})` }" />
 
     <div class="container hero-inner">
-      <div class="hero-badge">
-        <span class="dot" />
-        {{ club.recruit.season }}进行中
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot" />
+          {{ club.recruit.season }}进行中
+        </div>
+
+        <h1 class="hero-title">{{ club.slogan }}</h1>
+
+        <p class="hero-sub">{{ club.tagline }}</p>
+
+        <div class="hero-btns">
+          <router-link to="/join" class="btn-primary">
+            报名加入
+            <el-icon :size="15"><ArrowRight /></el-icon>
+          </router-link>
+          <router-link to="/works" class="btn-ghost">看看我们的车</router-link>
+        </div>
+
+        <p class="hero-note">
+          零基础可报名 · 不限专业 · 提供完整培训与车模器件
+        </p>
       </div>
 
-      <h1 class="hero-title">{{ club.slogan }}</h1>
-
-      <p class="hero-sub">{{ club.tagline }}</p>
-
-      <div class="hero-btns">
-        <router-link to="/join" class="btn-primary">
-          报名加入
-          <el-icon :size="15"><ArrowRight /></el-icon>
-        </router-link>
-        <router-link to="/works" class="btn-ghost">看看我们的车</router-link>
+      <div class="hero-carousel-wrap">
+        <el-carousel :interval="4000" arrow="hover" height="100%" indicator-position="none" class="hero-carousel">
+          <el-carousel-item v-for="(img, i) in heroImages" :key="i">
+            <img :src="img" alt="车模与活动" class="hero-carousel-img">
+          </el-carousel-item>
+        </el-carousel>
       </div>
-
-      <p class="hero-note">
-        零基础可报名 · 不限专业 · 提供完整培训与车模器件
-      </p>
     </div>
   </section>
 </template>
@@ -37,7 +47,12 @@ export default {
     return {
       club,
       // 社标：换社标只需替换 src/assets/img/img1.webp
-      logo: require('@/assets/img/img1.webp')
+      logo: require('@/assets/img/img1.webp'),
+      heroImages: [
+        require('@/assets/img/hero1.webp'),
+        require('@/assets/img/hero2.webp'),
+        require('@/assets/img/hero3.webp')
+      ]
     }
   }
 }
@@ -51,10 +66,37 @@ export default {
 }
 
 .hero-inner {
-  position: relative;      /* 盖在网格背景与社标水印之上 */
+  position: relative;
   z-index: 1;
-  max-width: 860px;
-  margin: 0 auto 0 max(24px, calc((100vw - var(--maxw)) / 2 + 24px));
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* 左右各占一半 */
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-content {
+  /* 文字内容区域 */
+}
+
+.hero-carousel-wrap {
+  height: 420px;
+}
+
+.hero-carousel {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  height: 100%;
+}
+
+:deep(.el-carousel__container) {
+  height: 100% !important;
+}
+
+.hero-carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-badge {
@@ -118,9 +160,13 @@ export default {
     padding: 64px 0 56px;
   }
 
-  /* 窄屏回到普通 container 内边距 */
   .hero-inner {
-    margin: 0 auto;
+    grid-template-columns: 1fr;  /* 移动端改成单列，轮播在文字下方 */
+    gap: 40px;
+  }
+
+  .hero-carousel-wrap {
+    height: 280px;
   }
 
   .hero-title {
@@ -138,7 +184,7 @@ export default {
 
   .hero-btns > * {
     flex: 1;
-    justify-content: center;      /* 移动端按钮撑满一行更好点 */
+    justify-content: center;
   }
 }
 </style>

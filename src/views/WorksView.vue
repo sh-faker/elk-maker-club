@@ -54,10 +54,10 @@
           </article>
         </div>
 
-        <p class="tip">
+        <!-- <p class="tip">
           新增作品：在 src/data/works.json 里加一条记录，图片放到 src/assets/img/ 下并填文件名；
           有比赛视频就把 B 站的 BV 号填进 bvid 字段，页面会自动换成播放器。
-        </p>
+        </p> -->
       </div>
     </section>
 

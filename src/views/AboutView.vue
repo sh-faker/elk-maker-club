@@ -60,9 +60,32 @@
           </el-carousel-item>
         </el-carousel>
 
-        <p class="lab-tip">
+        <!-- <p class="lab-tip">
           把 src/assets/img/ 下的 1.webp / 2.webp / 3.webp 换成实验室与活动实拍即可。
-        </p>
+        </p> -->
+      </div>
+    </section>
+
+    <!-- 我们的人 -->
+    <section class="section people-wrap">
+      <div class="container">
+        <div class="head">
+          <span class="eyebrow">我们的人</span>
+          <h2 class="section-title">一群志同道合的人</h2>
+          <p class="section-desc">
+            从焊板子到调车，从熬夜到冲奖，这些瞬间记录了我们一起拼过的日子。
+          </p>
+        </div>
+
+        <el-carousel :interval="5000" arrow="always" height="440px" class="people-carousel">
+          <el-carousel-item v-for="(img, i) in peopleImages" :key="i">
+            <img :src="img" alt="社团成员照片" class="people-img">
+          </el-carousel-item>
+        </el-carousel>
+
+        <!-- <p class="people-tip">
+          把照片放进 src/assets/img/，命名为 people1.webp、people2.webp 等，然后在 peopleImages 里引用。
+        </p> -->
       </div>
     </section>
 
@@ -114,7 +137,23 @@ export default {
       labImages: [
         require('@/assets/img/1.webp'),
         require('@/assets/img/2.webp'),
-        require('@/assets/img/3.webp')
+        require('@/assets/img/3.webp'),
+        require('@/assets/img/屋子-1.webp')
+      ],
+      peopleImages: [
+        require('@/assets/img/人-2.webp'),
+        require('@/assets/img/人-7.webp'),
+        require('@/assets/img/人-13.webp'), 
+        require('@/assets/img/人-4.webp'),
+        require('@/assets/img/人-5.webp'),
+        require('@/assets/img/人-6.webp'),
+        require('@/assets/img/人-8.webp'),
+        require('@/assets/img/人-11.webp'),
+        require('@/assets/img/人-9.webp'),
+        require('@/assets/img/人-10.webp'),
+        require('@/assets/img/人-3.webp'),
+        require('@/assets/img/人-12.webp'), 
+        require('@/assets/img/帅车.webp')
       ]
     }
   },
@@ -234,18 +273,44 @@ export default {
 
 .lab-carousel {
   border-radius: var(--radius-lg);
-  overflow: hidden;         /* 让圆角对轮播内部生效 */
-  border: 1px solid var(--border);
+  overflow: hidden;
+  border: none;  /* 去掉边框 */
 }
 
 .lab-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  background: transparent;  /* 背景透明，继承父容器颜色 */
 }
 
 .lab-tip {
+  margin: 16px 0 0;
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+/* ---------- 我们的人轮播 ---------- */
+.people-wrap {
+  background: var(--bg-0);
+}
+
+.people-carousel {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: none;  /* 去掉边框 */
+}
+
+.people-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: transparent;  /* 背景透明，融入页面 */
+}
+
+.people-tip {
   margin: 16px 0 0;
   font-size: 12px;
   color: var(--text-3);
@@ -321,6 +386,10 @@ export default {
 
   /* Element 的高度是行内样式，只能用 :deep + !important 覆盖 */
   .lab-carousel :deep(.el-carousel__container) {
+    height: 220px !important;
+  }
+
+  .people-carousel :deep(.el-carousel__container) {
     height: 220px !important;
   }
 }

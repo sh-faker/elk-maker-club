@@ -35,6 +35,10 @@
               <el-icon :size="16"><ChatDotRound /></el-icon>
               QQ 群 {{ club.contact.qqGroup }}
             </div>
+            <div class="qr-wrap">
+              <img :src="require('@/assets/img/qq.webp')" alt="QQ群二维码" class="qr-img">
+              <p class="qr-tip">扫码加群</p>
+            </div>
           </template>
 
           <p class="apply-foot">
@@ -154,7 +158,6 @@ export default {
     recruitRows() {
       return [
         { label: '招新对象', value: club.recruit.target },
-        { label: '报名截止', value: club.recruit.deadline },
         { label: '培训周期', value: '基础培训 8 周，之后按方向进阶' },
         { label: '费用', value: '不收会费，车模与主要器件由社团提供' },
         { label: '实验室', value: club.contact.openHours }
@@ -253,6 +256,27 @@ export default {
   margin: 20px 0 0;
   font-size: 12.5px;
   line-height: 1.7;
+  color: var(--text-3);
+}
+
+/* 二维码 */
+.qr-wrap {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.qr-img {
+  width: 200px;  /* 稍微加宽一点 */
+  height: auto;  /* 自适应高度，保持图片原始比例 */
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  display: block;
+  margin: 0 auto;
+}
+
+.qr-tip {
+  margin: 10px 0 0;
+  font-size: 13px;
   color: var(--text-3);
 }
 

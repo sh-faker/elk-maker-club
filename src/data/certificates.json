@@ -1,0 +1,51 @@
+[
+  {
+    "_说明": "获奖证书照片走马灯。继续添加更多证书，在数组末尾加新的对象即可。",
+    "title": "麋鹿队",
+    "image": "cert1.webp"
+  },
+  {
+    "title": "神兵小将队",
+    "image": "cert2.webp"
+  },
+  {
+    "title": "麋鹿不迷路队",
+    "image": "cert3.webp"
+  },
+  {
+    "title": "GTA9队",
+    "image": "cert4.webp"
+  },
+  {
+    "title": "飞天麋鹿",
+    "image": "证书2.webp"
+  },
+  {
+    "title": "飞天麋鹿",
+    "image": "证书3.webp"
+  },
+  {
+    "title": "飞天麋鹿",
+    "image": "证书4.webp"
+  },
+  {
+    "title": "飞天麋鹿",
+    "image": "证书5.webp"
+  },
+  {
+    "title": "逐光队",
+    "image": "证书6.webp"
+  },
+  {
+    "title": "AE86队",
+    "image": "证书7.webp"
+  },
+  {
+    "title": "AE86队",
+    "image": "证书8.webp"
+  },
+  {
+    "title": "AE86队",
+    "image": "证书9.webp"
+  }
+]

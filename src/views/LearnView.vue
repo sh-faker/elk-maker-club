@@ -68,9 +68,9 @@
           </component>
         </div>
 
-        <p class="tip">
+        <!-- <p class="tip">
           维护提示：链接在 src/data/resources.json 里，url 留空的条目会自动显示为不可点击状态。
-        </p>
+        </p> -->
       </div>
     </section>
 

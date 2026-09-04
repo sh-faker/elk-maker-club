@@ -42,8 +42,8 @@
     </section>
 
     <Roadmap />
-    <!-- 首页只展示最近两个赛季，完整记录在赛事页 -->
-    <HonorWall :limit="2" />
+    <!-- 首页用走马灯展示证书照片，完整文字记录在赛事页 -->
+    <HonorWallCarousel />
     <LogoCloud />
     <CTASection />
   </div>
@@ -55,7 +55,7 @@ import StatsBar from '@/components/StatsBar.vue'
 import TrackCards from '@/components/TrackCards.vue'
 import FeatureRow from '@/components/FeatureRow.vue'
 import Roadmap from '@/components/Roadmap.vue'
-import HonorWall from '@/components/HonorWall.vue'
+import HonorWallCarousel from '@/components/HonorWallCarousel.vue'
 import LogoCloud from '@/components/LogoCloud.vue'
 import CTASection from '@/components/CTASection.vue'
 
@@ -67,7 +67,7 @@ export default {
     TrackCards,
     FeatureRow,
     Roadmap,
-    HonorWall,
+    HonorWallCarousel,
     LogoCloud,
     CTASection
   }

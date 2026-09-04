@@ -4,7 +4,6 @@
       <h2 class="cta-title">下一辆车，可能就是你做的</h2>
       <p class="cta-sub">
         {{ club.recruit.season }}正在进行，面向{{ club.recruit.target }}。
-        报名截止 {{ club.recruit.deadline }}。
       </p>
 
       <div class="cta-btns">
