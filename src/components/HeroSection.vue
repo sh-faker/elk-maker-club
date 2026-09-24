@@ -161,7 +161,7 @@ export default {
   }
 
   .hero-inner {
-    grid-template-columns: 1fr;  /* 移动端改成单列，轮播在文字下方 */
+    grid-template-columns: 1fr;
     gap: 40px;
   }
 
@@ -171,6 +171,7 @@ export default {
 
   .hero-title {
     font-size: 36px;
+    line-height: 1.2;
   }
 
   .hero-sub {
@@ -180,11 +181,44 @@ export default {
 
   .hero-btns {
     width: 100%;
+    gap: 12px;
   }
 
   .hero-btns > * {
     flex: 1;
     justify-content: center;
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 48px 0 40px;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+    padding: 5px 12px;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+
+  .hero-sub {
+    font-size: 14.5px;
+    margin-bottom: 24px;
+  }
+
+  .hero-carousel-wrap {
+    height: 220px;
+  }
+
+  .hero-note {
+    font-size: 12px;
+    margin-top: 18px;
   }
 }
 </style>

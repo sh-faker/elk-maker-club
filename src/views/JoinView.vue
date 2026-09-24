@@ -411,11 +411,15 @@ export default {
   }
 
   .steps {
-    grid-template-columns: 1fr;   /* 竖排，箭头不再需要 */
+    grid-template-columns: 1fr;
   }
 
   .step-arrow {
     display: none;
+  }
+
+  .want-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -424,12 +428,55 @@ export default {
     margin-bottom: 30px;
   }
 
-  .want-grid {
-    grid-template-columns: 1fr;
+  .apply-row {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0;
+  }
+
+  .apply-label {
+    width: auto;
   }
 
   .faq :deep(.el-collapse-item__header) {
     font-size: 15px;
+    padding: 16px 0;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .qr-img {
+    width: 160px;
+  }
+
+  .step {
+    padding: 20px 16px;
+  }
+
+  .step-num {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
+
+  .step-title {
+    font-size: 15px;
+  }
+
+  .step-desc {
+    font-size: 12.5px;
+  }
+
+  .want-title {
+    font-size: 16px;
+  }
+
+  .want-desc {
+    font-size: 14px;
   }
 }
 </style>

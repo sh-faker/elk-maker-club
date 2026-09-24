@@ -158,5 +158,34 @@ export default {
     gap: 4px;
     padding: 8px 16px;
   }
+
+  .more {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  :deep(.el-carousel__container) {
+    height: 260px;
+  }
+
+  .cert-img {
+    max-width: 98%;
+    max-height: 90%;
+  }
+
+  .cert-caption {
+    bottom: 10px;
+    padding: 6px 14px;
+  }
+
+  .cert-year {
+    font-size: 13px;
+  }
+
+  .cert-title {
+    font-size: 12px;
+  }
 }
 </style>

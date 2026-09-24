@@ -379,18 +379,67 @@ export default {
     margin-bottom: 30px;
   }
 
+  .profile {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .dept-grid,
   .advisor-grid {
     grid-template-columns: 1fr;
   }
 
-  /* Element 的高度是行内样式，只能用 :deep + !important 覆盖 */
   .lab-carousel :deep(.el-carousel__container) {
     height: 220px !important;
   }
 
   .people-carousel :deep(.el-carousel__container) {
     height: 220px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-label {
+    font-size: 11px;
+  }
+
+  .profile-value {
+    font-size: 14px;
+  }
+
+  .dept-name {
+    font-size: 17px;
+  }
+
+  .dept-desc {
+    font-size: 14px;
+  }
+
+  .lab-carousel :deep(.el-carousel__container) {
+    height: 180px !important;
+  }
+
+  .people-carousel :deep(.el-carousel__container) {
+    height: 180px !important;
+  }
+
+  .advisor-top {
+    gap: 12px;
+  }
+
+  .advisor-photo,
+  .advisor-initial {
+    width: 50px;
+    height: 50px;
+  }
+
+  .advisor-name {
+    font-size: 16px;
+  }
+
+  .advisor-words {
+    font-size: 13px;
+    padding-left: 12px;
   }
 }
 </style>

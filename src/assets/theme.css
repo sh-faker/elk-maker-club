@@ -223,6 +223,10 @@ a {
     padding: 60px 0;
   }
 
+  .section--tight {
+    padding: 40px 0;
+  }
+
   .section-title {
     font-size: 28px;
   }
@@ -233,5 +237,42 @@ a {
 
   .container {
     padding: 0 18px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+    min-height: 44px;
+    padding: 11px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 0;
+  }
+
+  .section--tight {
+    padding: 32px 0;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-desc {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    margin-bottom: 12px;
   }
 }

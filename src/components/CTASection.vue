@@ -88,9 +88,35 @@ export default {
     font-size: 15px;
   }
 
+  .cta-btns {
+    gap: 12px;
+  }
+
   .cta-btns > * {
     flex: 1;
     justify-content: center;
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta {
+    padding: 48px 0;
+  }
+
+  .cta-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .cta-sub {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  .cta-note {
+    font-size: 12px;
+    margin-top: 24px;
   }
 }
 </style>

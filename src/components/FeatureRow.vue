@@ -107,7 +107,6 @@ export default {
     gap: 28px;
   }
 
-  /* 单列时统一图片在下，忽略 reverse */
   .row--reverse .row-media {
     order: 0;
   }
@@ -118,6 +117,34 @@ export default {
 
   .row-desc {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    gap: 24px;
+  }
+
+  .row-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .row-desc {
+    font-size: 14px;
+  }
+
+  .row-bullets {
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .row-bullets li {
+    font-size: 13.5px;
+  }
+
+  .row-img {
+    border-radius: var(--radius);
   }
 }
 </style>
