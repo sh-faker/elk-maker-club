@@ -14,10 +14,10 @@
 
   "_stats说明": "value 只放数字，奖项全称写进 awards.json。数字请按完整获奖清单核对后更新。",
   "stats": [
-    { "value": "4", "suffix": "", "label": "国赛奖项", "hint": "全国总决赛一等奖 2 项、二等奖 2 项" },
+    { "value": "20", "suffix": "", "label": "国赛奖项", "hint": "全国总决赛一等奖 2 项、二等奖 2 项" },
     { "value": "无数", "suffix": "", "label": "省赛奖项", "hint": "分赛区奖项" },
     { "value": "30", "suffix": "+", "label": "在研车模", "hint": "本赛季同时推进的参赛车模数量" },
-    { "value": "10", "suffix": "", "label": "深耕年限", "hint": "自 2016 年成立，连续参赛十届" }
+    { "value": "10", "suffix": "+", "label": "深耕年限", "hint": "自 2016 年成立，连续参赛十届" }
   ],
 
   "contact": {

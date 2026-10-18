@@ -49,9 +49,10 @@ export default {
       // 社标：换社标只需替换 src/assets/img/img1.webp
       logo: require('@/assets/img/img1.webp'),
       heroImages: [
-        require('@/assets/img/hero1.webp'),
         require('@/assets/img/hero2.webp'),
-        require('@/assets/img/hero3.webp')
+        require('@/assets/img/hero3.webp'),
+        require('@/assets/img/hero4.webp'),
+        require('@/assets/img/hero5.webp')
       ]
     }
   }

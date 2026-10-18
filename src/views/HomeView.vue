@@ -2,6 +2,7 @@
   <div class="home">
     <HeroSection />
     <StatsBar />
+    <CompetitionsSection />
     <TrackCards />
 
     <!-- 我们是怎么做事的：图文交错两段 -->
@@ -44,7 +45,7 @@
     <Roadmap />
     <!-- 首页用走马灯展示证书照片，完整文字记录在赛事页 -->
     <HonorWallCarousel />
-    <LogoCloud />
+    <!-- <LogoCloud /> -->
     <CTASection />
   </div>
 </template>
@@ -52,6 +53,7 @@
 <script>
 import HeroSection from '@/components/HeroSection.vue'
 import StatsBar from '@/components/StatsBar.vue'
+import CompetitionsSection from '@/components/CompetitionsSection.vue'
 import TrackCards from '@/components/TrackCards.vue'
 import FeatureRow from '@/components/FeatureRow.vue'
 import Roadmap from '@/components/Roadmap.vue'
@@ -64,6 +66,7 @@ export default {
   components: {
     HeroSection,
     StatsBar,
+    CompetitionsSection,
     TrackCards,
     FeatureRow,
     Roadmap,
