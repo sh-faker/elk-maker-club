@@ -131,14 +131,14 @@ export default {
       steps: [
         { title: '线上报名', desc: '填写报名表，留下专业、联系方式和感兴趣的方向。' },
         { title: '宣讲与开放日', desc: '来实验室看看真车，听在队成员讲他们的赛季经历。' },
-        { title: '基础培训期', desc: '为期 8 周的集中培训，边学边做，结束时你会有第一块自己焊的板子。' },
+        { title: '基础培训期', desc: '为期 4 周的集中培训，边学边做，结束时你会有第一块自己焊的板子。' },
         { title: '双向选择入队', desc: '培训结束后，你选方向、方向组选人，正式成为在队成员。' }
       ],
       wants: [
         {
           icon: 'Clock',
           title: '愿意稳定投入时间',
-          desc: '每周 6 到 10 小时，赛季更多。技术可以从零教，但时间没人能替你出。这是我们唯一的硬要求。'
+          desc: '时间没有强制要求，全凭自愿。技术可以从零教，但时间没人能替你出。这是我们唯一的硬要求。'
         },
         {
           icon: 'Aim',
@@ -157,7 +157,7 @@ export default {
     recruitRows() {
       return [
         { label: '招新对象', value: club.recruit.target },
-        { label: '培训周期', value: '基础培训 8 周，之后按方向进阶' },
+        { label: '培训周期', value: '基础培训 4 周，之后按方向进阶' },
         { label: '费用', value: '不收会费，车模与主要器件由社团提供' },
         { label: '实验室', value: club.contact.openHours }
       ]
