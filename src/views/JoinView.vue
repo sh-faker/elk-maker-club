@@ -21,7 +21,7 @@
 
           <!-- 填了问卷链接就显示按钮，没填就引导加群，不留死链接 -->
           <template v-if="club.recruit.formUrl">
-            <p class="apply-desc">填写报名表，我们会通过 QQ 群通知后续宣讲与面试安排。</p>
+            <p class="apply-desc">填写报名表，我们会通过 QQ 群通知后续宣讲安排。</p>
             <a :href="club.recruit.formUrl" target="_blank" rel="noopener" class="btn-primary apply-btn">
               打开报名表
               <el-icon :size="15"><Top /></el-icon>
@@ -53,9 +53,9 @@
       <div class="container">
         <div class="head">
           <span class="eyebrow">招新流程</span>
-          <h2 class="section-title">五步，从报名到入队</h2>
+          <h2 class="section-title">四步，从报名到入队</h2>
           <p class="section-desc">
-            面试只聊兴趣和时间投入，不考技术题。我们更在意你能不能坚持完培训期。
+            无需面试，报名后参加宣讲了解社团，直接进入培训期。我们更在意你能不能坚持完培训期。
           </p>
         </div>
 
@@ -131,7 +131,6 @@ export default {
       steps: [
         { title: '线上报名', desc: '填写报名表，留下专业、联系方式和感兴趣的方向。' },
         { title: '宣讲与开放日', desc: '来实验室看看真车，听在队成员讲他们的赛季经历。' },
-        { title: '简短面试', desc: '十分钟左右，聊兴趣、时间安排和你想学什么。不考技术。' },
         { title: '基础培训期', desc: '为期 8 周的集中培训，边学边做，结束时你会有第一块自己焊的板子。' },
         { title: '双向选择入队', desc: '培训结束后，你选方向、方向组选人，正式成为在队成员。' }
       ],
